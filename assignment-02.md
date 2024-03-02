@@ -13,7 +13,7 @@ and push to your github repository.
 1. Derive asymptotic upper bounds of work for each recurrence below.
   * $W(n)=2W(n/3)+1$
 .  
-.  $\Theta(n^{log_3 2})
+.  $\Theta(n^{log_3 2})$
 .  
 .  
 .  

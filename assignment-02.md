@@ -31,13 +31,13 @@ and push to your github repository.
 .  
   * $W(n)=9W(n/3)+n^2$
 .  
-.  
+.  $\Theta(n^2)$
 .  
 .  
 .  
   * $W(n)=8W(n/2)+n^3$
 .  
-.  
+.  $\Theta(n^3)$
 .  
 .  
 .  

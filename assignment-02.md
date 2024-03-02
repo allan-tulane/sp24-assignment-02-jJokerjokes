@@ -19,13 +19,13 @@ and push to your github repository.
 .  
   * $W(n)=5W(n/4)+n$
 .  
-.  
+.  $\Theta(n^{log_4 5})$
 .  
 .  
 .  
   * $W(n)=7W(n/7)+n$
 .  
-.  
+.  $\Theta(n^{log_7 7})$
 .  
 .  
 .  

@@ -84,6 +84,12 @@ $O(log n)$
 
     For algorithm A, $T(n) = 5T(n/2)+O(n)$, which yields running time of $O(n^{log_2 5})$
 
+    For Algorithm B, $T(n) = 2T(n-1)+O(1)$, yields $O(2^n)$
+
+    For Algorithm C, $T(n) = 9T(n/3)+O(n^2)$, yields $O(n^2)$
+
+    I will choose algorithm A as it has the shortest running time.
+
 
 3. Now that you have some practice solving recurrences, let's work on
   implementing some algorithms. In lecture we discussed a divide and

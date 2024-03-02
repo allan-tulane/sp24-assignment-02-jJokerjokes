@@ -43,23 +43,25 @@ and push to your github repository.
 .  
   * $W(n)=49W(n/25)+n^{3/2}\log n$
 .  
-.  
+.  $O(n^{3/2}\log n)$
 .  
 .  
 .  
   * $W(n)=W(n-1)+2$
 .  
-.  
+    $O(n)$
 .  
 .  
 .  
   * $W(n)= W(n-1)+n^c$, with $c\geq 1$
 .  
-.  
+.  $O(n^c)$
 .  
 .  
 .  
   * $W(n)=W(\sqrt{n})+1$
+
+$O(log n)$
 
 
 2. Suppose that for a given task you are choosing between the following three algorithms:

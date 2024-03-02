@@ -82,6 +82,8 @@ $O(log n)$
     What are the asymptotic running times of each of these algorithms?
     Which algorithm would you choose?
 
+    For algorithm A, $T(n) = 5T(n/2)+O(n)$, which yields running time of $O(n^{log_2 5})$
+
 
 3. Now that you have some practice solving recurrences, let's work on
   implementing some algorithms. In lecture we discussed a divide and

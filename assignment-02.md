@@ -86,7 +86,7 @@ $O(log n)$
 
     For Algorithm B, $T(n) = 2T(n-1)+O(1)$, yields $O(2^n)$
 
-    For Algorithm C, $T(n) = 9T(n/3)+O(n^2)$, yields $O(n^2)$
+    For Algorithm C, $T(n) = 9T(n/3)+O(n^2)$, yields $O(n^2 logn)$
 
     I will choose algorithm A as it has the shortest running time.
 

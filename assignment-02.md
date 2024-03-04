@@ -25,7 +25,7 @@ and push to your github repository.
 .  
   * $W(n)=7W(n/7)+n$
 .  
-.  $\Theta(n^{log_7 7})$
+.  $\Theta(n*log n)$
 .  
 .  
 .  

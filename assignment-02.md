@@ -88,7 +88,7 @@ $O(log n)$
 
     For Algorithm C, $T(n) = 9T(n/3)+O(n^2)$, yields $O(n^2 log n)$
 
-    I will choose algorithm A as it has the shortest running time.
+    I will choose algorithm C as it has the shortest running time.
 
 
 3. Now that you have some practice solving recurrences, let's work on

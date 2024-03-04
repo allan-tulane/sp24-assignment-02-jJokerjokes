@@ -47,8 +47,32 @@ def pad(x,y):
 
 def subquadratic_multiply(x, y):
     ### TODO
-    pass
-    ###
+  if len(x.binary_vec) < 2 or len(y.binary_vec) < 2:
+    return BinaryNumber(x.decimal_val * y.decimal_val)
+
+  # Pad the binary vectors if necessary
+  x.binary_vec, y.binary_vec = pad(x.binary_vec, y.binary_vec)
+
+  # Split x and y into halves
+  xL, xR = split_number(x.binary_vec)
+  yL, yR = split_number(y.binary_vec)
+
+  # Recursive calls for three parts of the Karatsuba algorithm
+  A = subquadratic_multiply(xL, yL)  # xL * yL
+  B = subquadratic_multiply(xR, yR)  # xR * yR
+
+  # (xL + xR) * (yL + yR)
+  xL_plus_xR = BinaryNumber(xL.decimal_val + xR.decimal_val)
+  yL_plus_yR = BinaryNumber(yL.decimal_val + yR.decimal_val)
+  C = subquadratic_multiply(xL_plus_xR, yL_plus_yR)
+
+  # Middle term calculation
+  mid_term = C.decimal_val - A.decimal_val - B.decimal_val
+
+  # Combine the three parts using the Karatsuba algorithm
+  result = A.decimal_val * (1 << (len(x.binary_vec))) + mid_term * (1 << (len(x.binary_vec) // 2)) + B.decimal_val
+
+  return BinaryNumber(result).decimal_val
 
 
 
